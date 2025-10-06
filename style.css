@@ -1,0 +1,467 @@
+/* Generelle styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #4caf50;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Knapper */
+.btn {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+.btn-small {
+  padding: 8px 16px;
+  font-size: 0.9em;
+}
+
+/* Placeholder for billeder */
+.placeholder-img {
+  background-color: #ddd;
+  width: 100%;
+  height: 200px;
+}
+
+.placeholder-img.large {
+  height: 300px;
+}
+
+/* Header styles */
+header {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+}
+
+.logo h1 {
+  color: #4caf50;
+  font-size: 1.8em;
+}
+
+nav ul li a {
+  color: #333;
+  font-weight: 500;
+  padding: 5px 0;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #4caf50;
+}
+
+nav ul li a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #4caf50;
+}
+
+/* Hero sektion */
+.hero {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  background-color: white;
+  color: #4caf50;
+}
+
+/* Fremhævede sektioner */
+.featured {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+  font-size: 3em;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+.feature-box h3 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.feature-box p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Ugens Budgettip */
+.weekly-tip {
+  padding: 60px 0;
+  background-color: #f0f8f0;
+}
+
+.weekly-tip h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.tip-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tip-icon {
+  font-size: 3em;
+  color: #4caf50;
+  margin-right: 30px;
+}
+
+.tip-text h3 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.tip-text p {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.read-more {
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Studievenlig Madplan */
+.meal-plan {
+  padding: 60px 0;
+  background-color: white;
+}
+
+.meal-plan h2,
+.did-you-know h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+
+.intro-text {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #666;
+  font-size: 1.1em;
+}
+
+.day-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.day-card h3 {
+  margin-bottom: 15px;
+  color: #4caf50;
+}
+
+.day-card p {
+  margin-bottom: 10px;
+  font-size: 0.95em;
+}
+
+.day-card.highlight {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-card.highlight h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.full-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.full-link .btn-small {
+  background-color: white;
+  color: #4caf50;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+/* Vidste du? */
+.did-you-know {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.fact-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.fact-icon {
+  font-size: 2.5em;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+/* Sidetitel (for undersider) */
+.page-title {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.page-title h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.page-title p {
+  font-size: 1.2em;
+}
+
+/* Filtrering */
+.filter-section {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.filter-group select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  width: 100%;
+}
+
+.filter-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filter-button:hover {
+  background-color: #3e8e41;
+}
+
+/* Opskrifter */
+.recipes-section {
+  padding: 40px 20px;
+}
+
+.recipe-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+/* Opskriftsbilleder */
+.recipe-img {
+  height: 200px;
+  overflow: hidden;
+}
+
+.recipe-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.recipe-content {
+  padding: 20px;
+}
+
+.recipe-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.recipe-content p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.recipe-meta {
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 30px;
+}
+
+.pagination a {
+  color: #333;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #f1f1f1;
+}
+
+.pagination a.next {
+  margin-left: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 60px 0 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  position: relative;
+}
+
+.footer-section h3::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #4caf50;
+}
+
+.footer-section p {
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5em;
+  margin-right: 15px;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.newsletter-form button {
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  color: #888;
+}
